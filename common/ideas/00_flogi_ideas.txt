@@ -705,7 +705,7 @@ soldnerheer0 = {
 			}
 		}
 	
-	soldnerheer2 = {
+	expanded_contracts = {
 		mercenary_cost = -0.2
 		possible_condottieri = 1 
 	}
@@ -729,7 +729,7 @@ soldnerheer0 = {
 		army_tradition_from_battle = 0.5
 		merc_leader_army_tradition = 0.6
 	}
-	soldnerheer7 = {
+	organised_mercenary_recruitment = {
 		#allow_mercenaries_to_split = yes  #Merging doesn't work for some reason
 		yearly_army_professionalism = 0.001
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
