@@ -43,7 +43,7 @@ philosopher = {
 			governing_capacity_modifier = 0.03
 		}
 	}	
-	
+
 	# skill_scaled_modifier = {
 	# 	trigger = { 
 	# 		owner = { 
@@ -1970,8 +1970,6 @@ navigator = {
 			}
 		}
 		modifier = {
-			factor = 3
-			has_idea_group = flottenbasis0 
 			monthly_kalsyto_influence = 0.03
 		}
 	}

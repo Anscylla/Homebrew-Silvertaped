@@ -1164,19 +1164,23 @@ country_event = {
 		}
 		custom_tooltip = pop_menu_purge_desc_tt
 		generic_end_purge = { race = centaur }
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { 
+				NOT = { 
+					has_idea = homebrew_x_for_xians 
+				} 
+			}
 			add_adm_power = -100
 		}
-			hidden_effect = {
-				if = { limit = { ai = no }
-					set_country_flag = just_stopped_purging
-					country_event = { id = racial_pop_events_centaur.24 }
-				}
-				else = {
-					clr_country_flag = racial_pop_menu_opened
-				}
+		hidden_effect = {
+			if = { limit = { ai = no }
+				set_country_flag = just_stopped_purging
+				country_event = { id = racial_pop_events_centaur.24 }
 			}
-		
+			else = {
+				clr_country_flag = racial_pop_menu_opened
+			}
+		}
 	}
 	
 	#Cannot End Purge
@@ -1387,7 +1391,12 @@ country_event = {
 			}
 		}
 		custom_tooltip = pop_menu_expel_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { 
+				NOT = { 
+					has_idea = homebrew_x_for_xians 
+				} 
+			}
 			add_adm_power = -50
 		}	
 		generic_start_expulsion = { race = centaur }
@@ -1492,7 +1501,12 @@ country_event = {
 		}
 		custom_tooltip = pop_menu_expel_desc_tt
 		generic_end_expulsion = { race = centaur }
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { 
+				NOT = { 
+					has_idea = homebrew_x_for_xians 
+				} 
+			}
 			add_adm_power = -50
 		}
 		hidden_effect = {
@@ -2875,10 +2889,6 @@ country_event = {
 				remove_random_development = yes
 				
 			}
-			
-			add_permanent_province_modifier = { name = purge_unrest_modifier duration = 9125 }
-			
-		}
 		
 		large_decrease_of_centaur_tolerance_effect = yes
 
