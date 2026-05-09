@@ -37,6 +37,7 @@ technology = { #Tribal Government
 	pioneer_office = yes
 	mustering_field = yes
 	local_exchange = yes
+	automatory = yes
 
 	#world_tree_lvl_1 = yes
 	#world_tree_lvl_2 = yes
@@ -299,7 +300,7 @@ technology = { #National Sovereignty
 
 technology = { #Cathedral
 	# Tech 19
-	year = 1648	
+	year = 1648
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -444,7 +445,7 @@ technology = { #Modern Bureaucracy
 	}
 
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1
+	development_cost_modifier = -0.1	
 	governing_capacity = 250
 }
 
