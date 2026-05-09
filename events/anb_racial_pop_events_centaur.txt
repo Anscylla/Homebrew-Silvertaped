@@ -2889,7 +2889,7 @@ country_event = {
 				remove_random_development = yes
 				
 			}
-		
+		}
 		large_decrease_of_centaur_tolerance_effect = yes
 
 		if = { limit = { has_country_flag = B54_cflag_arbitrary_purges } 
