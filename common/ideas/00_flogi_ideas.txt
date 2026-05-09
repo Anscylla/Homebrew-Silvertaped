@@ -40,6 +40,7 @@ justiz0 = {
 	justiz7 = {
 		tolerance_heathen = 1
 		tolerance_heretic = 1
+		enemy_core_creation = 0.1
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -282,6 +283,7 @@ assimilation0 = {
 	}
 	
 	homebrew_melting_pot = {
+		development_cost_in_primary_culture = -0.025 #Any modifier has to be there, just so the modifier icon is visible. Without it, you get "?" icon
 		#grants buff based on # of races
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
@@ -655,7 +657,7 @@ stehendesheer0 = {
 		
 		trigger = {
 			NOT = {
-				has_idea_group = soldnerheer0
+				has_idea_group = mercenary_ideas
 				has_idea_group = wehrpflicht0 
 				}
 			}
@@ -715,7 +717,7 @@ stehendesheer0 = {
 ########################################################
 
 
-soldnerheer0 = {
+mercenary_ideas = { #Name has been changes, simply because it's easier to maintain everything >> less files to be modified if some mission tree or basically anything, expects merc ideas
 	category = MIL
 
 	bonus = {
@@ -810,7 +812,7 @@ wehrpflicht0 = {
 		trigger = {
 			NOT = {
 				has_idea_group = stehendesheer0
-				has_idea_group = soldnerheer0
+				has_idea_group = mercenary_ideas
 			}
 		}
 	

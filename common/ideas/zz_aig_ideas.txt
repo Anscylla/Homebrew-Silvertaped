@@ -30,6 +30,7 @@ AIG_magocratic_ideas = {
 		improve_relation_modifier = 0.1
 	}
 	hb_magical_tournaments = {
+		#enables war wizards
 		siege_ability = 0.15
 	}
 	AIG_scriers = {
@@ -170,7 +171,7 @@ AIG_imperial_ideas = {
 	}
 	AIG_citadel_research = {
 		defensiveness = 0.1
-		great_project_upgrade_cost = -0.^2
+		great_project_upgrade_cost = -0.15
 	}
 	AIG_dameshead_trade = {
 		trade_efficiency = 0.1
@@ -187,7 +188,7 @@ AIG_imperial_ideas = {
 		#maybe nerf to 0.5, wait for feedback
 	}
 	AIG_efficient_beaurocracy = {
-		reasons_to_elect = 10
+		reasons_to_elect = 25
 	}
 	ai_will_do = {
 		factor = 0.34

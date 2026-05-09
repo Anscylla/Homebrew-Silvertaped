@@ -82,7 +82,7 @@ AIG_elven_supremacy_ideas = {
 			has_country_modifier = elven_administration
 			NOT = { dominant_religion = the_jadd }
 			NOT = { has_idea_group = religious_ideas }
-			dip_tech = 20
+			dip_tech = 8
 		}
 	}
 	AIG_elven_forebears = {
@@ -231,13 +231,13 @@ AIG_serpentspine_ideas = {
 	}
 	AIG_dwarven_citadels = {
 		#fort level +1 in serpentspine
-		fort_maintenance_modifier = -0.50
+		fort_maintenance_modifier = 0.50
 	}
 	AIG_hostile_ground = {
-		build_time = -0.15
+		build_time = -0.1
 	}
 	AIG_under_fire = {
-		infantry_power = 0.1
+		infantry_power = 0.75
 	}
 	AIG_serpentsbeat = {
 		#movement_speed = 0.2 on has_terrain = dwarven_road
