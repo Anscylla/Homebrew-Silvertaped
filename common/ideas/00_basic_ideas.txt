@@ -1186,8 +1186,7 @@ administrative_ideas = {
 		advisor_pool = 1
 	}
 	new_taxation = {
-		global_tax_income = 144
-		inflation_reduction = -0.05
+		global_tax_income = 36
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
