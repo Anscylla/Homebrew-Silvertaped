@@ -217,7 +217,7 @@
  hb_silver_lining:0 "Silver Lining"
  hb_silver_lining_desc:0 "There are those who say nothing good can come out of a loss. By reminding them of what a defeat can bring us, both bad and good, we can bolster our war enthusiasm."
  hb_magical_tournaments:0 "Host Magical Tournaments"
- hb_magical_tournaments_desc:0 "By hosting tournaments of magical prowess, we can better scout for mages of great potential\n\n§TAllows War Wizards to appear. Chance increases with the Battlemage Academies privilege§!"
+ hb_magical_tournaments_desc:0 "By hosting tournaments of magical prowess, we can better scout for mages of great potential and recruit them for our armies!"
  
  #replacements for AL
  AIG_serpentspine_ideas:0 "§P***§! Serpentspine Ideas §P***§!"
@@ -253,7 +253,7 @@
  AIG_loyal_mages:0 "Ancient Tradition"
  AIG_loyal_mages_desc:0 "Mages have always held a position of power in society, this has resulted in an increased stability in ours."
  AIG_mage_archives:0 "Private Studies"
- AIG_mage_archives_desc:0 "Education is the foremost cocnern of any well-to-do mage, and our ruler has the entire resources of the country to use in their own pursuit of knowledge.\n\nMagical Study experience: §G+25%§W"
+ AIG_mage_archives_desc:0 "Education is the foremost cocnern of any well-to-do mage, and our mages have the entire resources of the country to use in their own pursuit of knowledge."
  AIG_wizard_tax:0 "The Magic Tax"
  AIG_wizard_tax_desc:0 "We do not patronize the magical elite without expecting something in return. Though they may complain, the mages of our realm will happily pay a small fee for the privilege of working here."
  AIG_scriers:0 "Cloak and Wand"

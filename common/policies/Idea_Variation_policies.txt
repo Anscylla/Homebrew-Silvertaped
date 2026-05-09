@@ -3274,7 +3274,7 @@ idea_variation_act_651 = {
 	legitimacy = 2
 	devotion = 1			
 	horde_unity = 1
-	meritocracy = 1
+	meritocracy = 0.5
 	republican_tradition = 0.2
 		
 	ai_will_do = {
@@ -5230,7 +5230,7 @@ idea_variation_act_59 = {
 	}
 	
 	legitimacy = 2
-	meritocracy = 1
+	meritocracy = 0.5
 	devotion = 1
 	horde_unity = 1
 	republican_tradition = 0.2
@@ -7391,7 +7391,7 @@ idea_variation_act_131 = {
 	}
 	
 	legitimacy = 1
-	meritocracy = 1
+	meritocracy = 0.5
 	republican_tradition = 0.2
 	devotion = 1
 	horde_unity = 1
@@ -12114,7 +12114,7 @@ idea_variation_act_292 = {
 	}
 	
 	legitimacy = 1
-	meritocracy = 1
+	meritocracy = 0.5
 	republican_tradition = 0.2
 	devotion = 1
 	horde_unity = 1
@@ -13903,7 +13903,7 @@ monarch_power = ADM
 	}
 	
 	legitimacy = 1
-	meritocracy = 1
+	meritocracy = 0.5
 	devotion = 1
 	horde_unity = 1
 	republican_tradition = 0.2
@@ -15061,7 +15061,7 @@ idea_variation_act_400 = {
 	}
 	
 	legitimacy = 1
-	meritocracy = 1
+	meritocracy = 0.5
 	republican_tradition = 0.2
 	devotion = 1
 	horde_unity = 1
@@ -16175,7 +16175,7 @@ idea_variation_act_433 = {
 	legitimacy = 1
 	devotion = 1
 	horde_unity = 1
-	meritocracy = 1
+	meritocracy = 0.5
 	republican_tradition = 0.2
 	
 	ai_will_do = {
@@ -17312,7 +17312,7 @@ idea_variation_act_468 = {
 	
 	legitimacy = 1
 	republican_tradition = 0.2
-	meritocracy = 1
+	meritocracy = 0.5
 	devotion = 1
 	horde_unity = 1
 	
