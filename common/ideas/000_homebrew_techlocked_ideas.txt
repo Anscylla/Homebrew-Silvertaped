@@ -7,10 +7,8 @@ AIG_industrial_ideas = {
 		nl_cooperatists_influence = 0.05
 	}
 	trigger = {
-		OR = {
-			has_country_modifier = magic_artificery_mixed
-			has_country_modifier = magic_artificery_artificery_only
-		}
+		adm_tech = 10
+		NOT = { is_not_in_artificery_mode = yes }
 	}
 	AIG_factory_towns = {
 		build_time = -0.1
@@ -267,7 +265,8 @@ AIG_artificery_ideas = {
 		tec_brilliance_influence = 0.05
 	}
 	trigger = {
-		has_country_modifier = magic_artificery_artificery_only
+		mil_tech = 7
+		NOT = { is_not_in_artificery_mode = yes }
 	}
 	AIG_m_missile = {
 		mil_tech_cost_modifier = -0.1

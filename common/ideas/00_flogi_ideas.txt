@@ -717,7 +717,7 @@ stehendesheer0 = {
 ########################################################
 
 
-mercenary_ideas = { #Name has been changes, simply because it's easier to maintain everything >> less files to be modified if some mission tree or basically anything, expects merc ideas
+mercenary_ideas = { #Name has been changed, simply because it's easier to maintain everything >> less files to be modified if some mission tree or basically anything, expects merc ideas
 	category = MIL
 
 	bonus = {

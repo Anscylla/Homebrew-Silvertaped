@@ -6053,16 +6053,22 @@ mage_tower = {
 		all
 	}
 	build_trigger = {
+		NOT = { has_province_modifier = adjacent_fort_penalty }
+
 		OR = {
-			FROM = { has_not_banned_magic = yes }
+			AND = {
+				FROM = { has_not_banned_magic = yes }
+				FROM = {
+					NOT = { has_country_flag = magic_artificery_artificery_only }
+				}
+			}
 			FROM = { has_country_modifier = command_the_korashi_secret }
 
 			AND = {
-				FROM = { has_banned_magic_artificery = yes } 
+				FROM = { has_country_flag = magic_artificery_artificery_only }
 				FROM = { has_idea = AIG_artificer_grants }
 			}
 		}
-		NOT = { has_province_modifier = adjacent_fort_penalty }
 	}
 	
 	keep_trigger = {

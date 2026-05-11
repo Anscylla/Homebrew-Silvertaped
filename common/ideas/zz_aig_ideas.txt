@@ -10,9 +10,7 @@ AIG_magocratic_ideas = {
 		tec_technomancy_influence = 0.05
 	}
 	trigger = {
-		OR = {
-			has_country_modifier = magic_artificery_mage_only
-		}
+		FROM = { has_not_banned_magic = yes }
 	}
 	AIG_loyal_mages = {
 		stability_cost_modifier = -0.2

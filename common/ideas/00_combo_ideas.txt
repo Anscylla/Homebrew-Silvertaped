@@ -15,10 +15,10 @@ religious_ideas = {
 		OR = {
 			NOT = { has_idea_group = AIG_elven_supremacy_ideas }
 			dominant_religion = the_jadd
-			#AND = { #fix for Aelnar needing Religious ideas
-			#	tag = Z43
-			#	NOT = { has_idea_group = AIG_elven_supremacy_ideas }
-			#}
+			AND = { #fix for Aelnar needing Religious ideas
+				tag = Z43
+				NOT = { has_idea_group = AIG_elven_supremacy_ideas }
+			}
 		}
 	}
 
@@ -149,7 +149,6 @@ formation0 = {
 	trigger = {
 		NOT = {
 			OR = {
-				has_idea_group = formation0
 				has_idea_group = AIG_serpentspine_ideas
 				has_idea_group = AIG_legionary_ideas
 			}
@@ -237,7 +236,7 @@ AIG_serpentspine_ideas = {
 		build_time = -0.1
 	}
 	AIG_under_fire = {
-		infantry_power = 0.75
+		infantry_power = 0.075
 	}
 	AIG_serpentsbeat = {
 		#movement_speed = 0.2 on has_terrain = dwarven_road
