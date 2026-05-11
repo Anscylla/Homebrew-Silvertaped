@@ -752,7 +752,6 @@ shipyard = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes
-		navy_forcelimit_giver_building_modifier_effect = yes		
 		merfolk_dynamic_settlement_effect = yes
 
 		gronstunad_building_authority_effect = { value = 1 }
@@ -1017,7 +1016,7 @@ fort_15th = {
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		on_any_fort_destroyed_effect = yes
-		homebrew_liquidation = { value = 450 }
+		homebrew_liquidation = { value = 250 }
 		hb_fort_removed = yes
 
 		if = {
@@ -1346,7 +1345,7 @@ dock = {
 	}
 
 	on_built = {
-		add_development_from_building = {
+		hb_add_development_from_building = {
 			building = dock
 			type = production
 			value = 1
@@ -3069,7 +3068,7 @@ stock_exchange = {
 			limit = {
 				has_province_flag = built_dev_trade_depot
 			}
-			hb_add_development_from_building = {
+			hb_add_development_from_upgrading_or_building = {
 				building = stock_exchange
 				obsolete_building = trade_depot
 				type = production
@@ -3081,7 +3080,7 @@ stock_exchange = {
 			limit = {
 				has_province_flag = built_dev_marketplace
 			}
-			hb_add_development_from_building = {
+			hb_add_development_from_upgrading_or_building = {
 				building = stock_exchange
 				obsolete_building = marketplace
 				type = production
@@ -3409,11 +3408,12 @@ drydock = {
 	}
 
 	on_destroyed = {
-		remove_development_from_building = {
-		building = drydock
-		type = production
-		value = 2
-	}
+		homebrew_liquidation = { value = 450 }
+		hb_remove_development_from_building = {
+			building = drydock
+			type = production
+			value = 2
+		}
 		if = {
 			limit = { has_province_modifier = lizardfolk_imperial_fisheries }
 			remove_province_modifier = lizardfolk_imperial_fisheries
@@ -4028,7 +4028,9 @@ wharf = {
 	}
 
 	ai_will_do = {
-		factor = 7
+		factor = 100
+		
+		# Financial
 		modifier = {
 			factor = 0.75
 			FROM = { is_in_deficit = yes }
@@ -4436,12 +4438,12 @@ textile = {
 	}
 }
 
-plantations = {
+plantations = { #Plant
 	build_trigger = {
 		if = {
 			limit = { FROM = { ai = yes } }
 			FROM = { NOT = { num_of_loans = 4 } }
-			development = 10
+			base_production = 5
 		}
 	}
 	manufactory = {
@@ -4589,7 +4591,7 @@ tradecompany = {
 		if = {
 			limit = { FROM = { ai = yes } }
 			FROM = { NOT = { num_of_loans = 4 } }
-			development = 10
+			base_production = 5
 		}
 	}
 	manufactory = {
@@ -4981,6 +4983,10 @@ farm_estate = {
 		modifier = {
 			factor = 0.75
 			FROM = { is_in_deficit = yes }
+		}
+		modifier = {
+			factor = 10
+			FROM = { treasury = 5000 }
 		}
 		modifier = {
 			factor = 5
@@ -5690,9 +5696,9 @@ soldier_households = {
 		
 		# Financial
 		modifier = {
-			factor = 0.75
-			FROM = { is_in_deficit = yes }
-			}
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
 		modifier = {
 			factor = 10
 			FROM = { treasury = 5000 }
@@ -6005,21 +6011,28 @@ state_house = {
 	}
 
 	ai_will_do = {
-		factor = 1
-		#Provinces in the Capital Area don't need a state house
+		factor = 25
 		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+			modifier = {
 			factor = 0
 			area_for_scope_province = {
 				is_capital_of = FROM
 			}
 		}
 		modifier = {
-			factor = 0.75
-			FROM = { is_in_deficit = yes }
+			factor = 100
+			FROM = { treasury = 10000 }
 		}
 		modifier = {
 			factor = 25
 			FROM = { governing_capacity_percentage = 0.9 }
+		}
+		modifier = {
+			factor = 2000
+			trade_goods = gold
 		}
 		modifier = {
 			factor = 25
@@ -6049,6 +6062,7 @@ mage_tower = {
 				FROM = { has_idea = AIG_artificer_grants }
 			}
 		}
+		NOT = { has_province_modifier = adjacent_fort_penalty }
 	}
 	
 	keep_trigger = {

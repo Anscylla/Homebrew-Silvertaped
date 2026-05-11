@@ -868,6 +868,7 @@ country_decisions = {
 						impressment_offices = { set_variable = { which = base_build_cost value = 750 } }
 						state_house = { set_variable = { which = base_build_cost value = 750 } }
 						mage_tower = { set_variable = { which = base_build_cost value = 750 } }
+						automatory = {set_variable = {which = base_build_cost value = 750 } }
 					}
 					
 					#scans for construction progress, local build cost and speed modifiers, and makes an all-in-one variable
@@ -944,6 +945,7 @@ country_decisions = {
 						impressment_offices = { add_building = impressment_offices }
 						state_house = { add_building = state_house }
 						mage_tower = { add_building = mage_tower }
+						automatory = { add_building = automatory }
 					}
 					
 					#canceling construction, and negating refunds
